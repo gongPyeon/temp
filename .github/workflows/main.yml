@@ -71,5 +71,5 @@ jobs:
         --application-name kang-codedeploy \
         --deployment-group-name kang-group \
         --file-exists-behavior OVERWRITE \
-        --s3-location bucket=kang-temp,bundleType=zip,key=sebadog.zip s3://$S3_BUCKET_NAME \
+        --s3-location bucket=kang-temp,bundleType=zip,key=sebadog.zip \
         --region ap-northeast-2
