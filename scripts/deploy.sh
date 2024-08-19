@@ -29,4 +29,3 @@ chmod +x $JAR_NAME
 echo "> $JAR_NAME 실행"
 
 nohup java -jar -Duser.timezone=Asia/Seoul $JAR_NAME >> $REPOSITORY/nohup.out 2>&1 &
-출처: https://kang-james.tistory.com/entry/CICD-Github-Action-AWS로-Java-자동-빌드배포하기 [내 꿈을 JAVA:티스토리]
