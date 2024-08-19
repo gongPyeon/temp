@@ -48,7 +48,7 @@ jobs:
       run: cp ./scripts/*.sh ./deploy
 
     - name: Make zip file
-      run: zip -r ./kang.zip ./deploy
+      run: zip -r ./sebadog.zip ./deploy
       shell: bash
 
     - name: Configure AWS credentials
@@ -71,5 +71,5 @@ jobs:
         --application-name coinTalk kang-codedeploy \
         --deployment-group-name coinTalk-group kang-group \
         --file-exists-behavior OVERWRITE \
-        --s3-location bucket=cointalk-deploy kang-temp,bundleType=zip,key=kang.zip sebadog \ 
+        --s3-location bucket=cointalk-deploy kang-temp,bundleType=zip,key=sebadog.zip sebadog \ 
         --region ap-northeast-2
