@@ -68,8 +68,8 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
       run: |
         aws deploy create-deployment \
-        --application-name coinTalk kang-codedeploy \
-        --deployment-group-name coinTalk-group kang-group \
+        --application-name kang-codedeploy \
+        --deployment-group-name kang-group \
         --file-exists-behavior OVERWRITE \
-        --s3-location bucket=cointalk-deploy kang-temp,bundleType=zip,key=sebadog.zip sebadog \ 
+        --s3-location bucket=kang-temp,bundleType=zip,key=sebadog.zip \ 
         --region ap-northeast-2
