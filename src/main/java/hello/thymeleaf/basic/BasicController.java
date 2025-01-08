@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -24,6 +25,13 @@ public class BasicController {
     public String textBasic(Model model) {
         model.addAttribute("data", "Hello Spring!");
         return "basic/text-basic";
+    }
+
+    @GetMapping("/ec2")
+    @ResponseBody
+    public String ec2Basic(Model model) {
+        model.addAttribute("data", "Hello Spring!");
+        return "ec2";
     }
 
     @GetMapping("/text-unescaped")
